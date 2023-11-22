@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobile Phones And Other Products</title>
+    <link rel="icon" href="Flipkart-logo.ico" type="ico">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 2px;
+            width: 2px;
+            background-color: #2874f0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /*animation-name: widthAnimate;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;*/
+            animation: widthAnimate 0.9s ease-in-out 0s 1 alternate;
+        }
+        @keyframes widthAnimate {
+            0% {
+                width: 2px;
+            }
+
+            90% {
+                width: 90%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+        .box1 {
+            position: sticky;
+            top: 0;
+            height: 66px;
+            width: 1263px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 3px 43px;
+            z-index: 99;
+        }
+        .container {
+            height: 1695px;
+            width: 100%;
+            background-color: #DCDCDC;
+            position: relative;
+        }
+        .search-input {
+            padding: 10px;
+            border: none;
+            border-radius: 11px;
+            width: 519px;
+            background-color: #DCDCFD;
+            height: 18px;
+            font-size: large;
+        }
+        .search-button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .seller-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 1.0em;
+            margin-left: 46px;
+        }
+        .profile-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 1.0em;
+            margin-left: 48px;
+        }
+        .cart-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 1.0em;
+            margin-left: 61px;
+        }
+        .more-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 1.0em;
+            margin-left: 61px;
+        }
+        .list{
+            background-color: #fff;
+            height: 131px;
+            width: 1326px;
+            margin: 11px;
+        }
+        .ul1{
+            display: flex;
+        }
+        .li1{
+            list-style: none;
+            margin: 15px 24px 8px 10px;
+        }
+        .li1 img{
+            width: 100px;
+        }
+        .radio{
+            display: none;
+        }
+        .scroll-container{
+            display: none;
+        }
+        .flipkart-button{
+            display: none;
+        }
+        .Grocery-button{
+            display: none;
+        }
+        .width{
+            width: 1400px;
+            height: 200px;
+        }
+        .slider {
+            background-color: black;
+            height: 198px;
+            width: 1326px;
+            overflow: hidden;
+            margin-top: 17px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .slider img {
+            flex: 0 0 auto;
+            transition: transform 1s ease-in-out;
+        }
+        .slider img {
+            animation: slide 55s forwards 2s infinite;
+        }
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            14.28% {
+                transform: translateX(-100%);
+            }
+            28.56% {
+                transform: translateX(-200%);
+            }
+            42.84% {
+                transform: translateX(-300%);
+            }
+            57.12% {
+                transform: translateX(-400%);
+            }
+            71.4% {
+                transform: translateX(-500%);
+            }
+            85.68% {
+                transform: translateX(-600%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        .card-discount{
+            background-color: #fff;
+            height: 131px;
+            width: 1326px;
+            margin: 11px;
+        }
+        .credit-card{
+            margin: 6px 39px;
+            width: 1231px;
+        }
+        .best-mobiles{
+            background-color: #fff;
+            width: 1110px;
+            height: 280px;
+            margin: 0px 11px;
+        }
+        .extra-sale{
+            background-color: #fff;
+            width: 197px;
+            height: 280px;
+            margin: 0px 11px;
+            margin-left: 1140px;
+            margin-top: -320px;
+        }
+        .best-mobiles-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 1.3em;
+            margin: 31px 15px;
+        }
+        .mobiles{
+            margin-left: 10px;
+            background-color: #fff;
+            height: 212px;
+            width: 1089px;
+            margin-top: -28px;
+        }
+        .ul2{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            white-space: nowrap;
+            overflow: auto;
+        }
+        .li2{
+            margin: 20px -2px 4px -98px;
+            flex: 0 0 300px;
+            text-align: center;
+            padding: 10px;
+            margin-left: -86px;
+        }
+        .li2 img{
+            width: 130px;
+        }
+        .left{
+            background-color: #fff;
+            height: 236px;
+            width: 1326px;
+            margin-top: 30px;
+            margin-left: 11px;
+        }
+        .width-left{
+            width: 439px;
+        }
+        .Top-deals{
+            background-color: #fff;
+            width: 1326px;
+            height: 280px;
+            margin: 15px 11px;
+        }
+        .ul3{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            white-space: nowrap;
+            overflow: auto;
+        }
+        .li3{
+            margin: -9px -9px 0px -100px;
+            flex: 0 0 300px;
+            text-align: center;
+            padding: 10px;
+            margin-left: -86px;
+        }
+        .li3 img{
+            width: 130px;
+        }
+        .top-deals-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 1.3em;
+            margin: 31px 15px;
+        }
+
+
+
+
+
+        .nav1{
+            height: 1370px;
+            width: 100%;
+            background-color: #ebe8e4;
+            position: relative;
+        }
+        .top-stories-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 1.0em;
+            margin: 31px 25px;
+        }
+        .most-searched-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .nava{
+            color: #565656;
+            padding: 0px 11px;
+            border-right: 1px solid #333;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .nava_1{
+            margin: 0px 10px;
+        }
+        .MOBILES-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .CAMERA-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .LAPTOPS-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .TVS-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .LARGE-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .CLOTHING-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .FOOTWEAR-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .BEST-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .FURNITURE-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+            border: none;
+            font-size: 0.9em;
+            margin: 0px 12px;
+        }
+        .Navigation-button1{
+            cursor: pointer;
+            background-color: transparent;
+            color: gray;
+            border: none;
+            font-size: 1.0em;
+            margin: 31px 25px;
+        }
+        .desc1-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: rgb(115, 109, 109);
+            border: none;
+            font-size: 0.8em;
+            margin: -21px 24px;
+            display: block;
+        }
+        .desc2-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: rgb(115, 109, 109);
+            border: none;
+            font-size: 0.8em;
+            margin: 20px 24px;
+            display: block;
+        }
+        .Navigation-button2{
+            cursor: pointer;
+            background-color: transparent;
+            color: gray;
+            border: none;
+            font-size: 1.0em;
+            margin: 0px 25px;
+        }
+        .desc3-button{
+            cursor: pointer;
+            background-color: transparent;
+            color: rgb(115, 109, 109);
+            border: none;
+            font-size: 0.8em;
+            margin: 20px 24px;
+            display: block;
+        }
+        .nav2{
+            height: 350px;
+            width: 100%;
+            background-color: black;
+            position: relative;
+        }
+        .one{
+            display: grid;
+            padding: 40px 60px 0;
+            column-gap: 20px;
+            grid-template-columns: repeat(6,1fr);
+        }
+        .two{
+            color: #878787;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .bet{
+            font-size: 12px;
+            color: #fff;
+            display: block;
+            line-height: 18px;
+            text-decoration: none;
+        }
+        .three{
+            border-left: 1px solid #454d5e;
+            padding-left: 32px;
+        }
+        .bey{
+            white-space: nowrap;
+            color: #fff;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .one1{
+            border-top: 1px solid #454d5e;
+            padding: 25px 0;
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .two1{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 600px){
+            .seller-button{
+                display: none;
+            }
+            .profile-button{
+                display: none;
+            }
+            .cart-button{
+                display: none;
+            }
+            .more-button{
+                display: none;
+            }
+            .plus{
+                display: none;
+            }
+            .extra-sale{
+                display: none;
+            }
+            .search-input{
+                padding: 10px;
+                border: none;
+                border-radius: 11px;
+                width: 337px;
+                background-color: #DCDCFD;
+                height: 18px;
+                font-size: large;
+                margin-top: 51px;
+                margin-left: -442px;
+            }
+            .search-button{
+                padding: 10px 15px;
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+            .box1 {
+                top: 0;
+                position: sticky;
+                height: 100px;
+                width: 409px;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                padding: 3px 44px;
+                z-index: 99;
+            }
+            .container {
+                height: 1121px;
+                width: 498px;
+                background-color: #DCDCDC;
+                position: relative;
+
+            }
+            .list{
+                background-color: #fff;
+                height: 131px;
+                width: 480px;
+                margin: 11px;
+            }
+            .ul1{
+                display: flex;
+                padding: 0;
+                margin: 0;
+                white-space: nowrap;
+                overflow: auto;
+            }
+            .li1{
+                margin: 16px -102px 4px -94px;
+                flex: 0 0 300px;
+                text-align: center;
+                padding: 10px;
+            }
+            .ul1 img{
+                width: 75px;
+            }
+            .flipkart-button{
+                display: block;
+                padding: 7px 71px;
+                cursor: pointer;
+                background-color: rgb(20, 83, 201);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: x-large;
+                margin-top: -49px;
+                margin-left: -17px;
+            }
+            .Grocery-button{
+                display: block;
+                padding: 5px 65px;
+                cursor: pointer;
+                margin-top: -47px;
+                border: none;
+                border-radius: 10px;
+                margin-left: 20px;
+            }
+            .slider {
+                background-color: black;
+                height: 80px;
+                width: 480px;
+                overflow: hidden;
+                margin: 0 auto;
+                display: flex;
+                margin-left: 11px;
+                margin-left: 15px;
+            }
+            .slider img {
+                flex: 0 0 auto;
+                transition: transform 1s ease-in-out;
+                height: 80px;
+            }
+            .slider img {
+                animation: slide 55s forwards 2s infinite;
+            }
+            @keyframes slide {
+                0% {
+                    transform: translateX(0);
+                }
+                14.28% {
+                    transform: translateX(-100%);
+                }
+                28.56% {
+                    transform: translateX(-200%);
+                }
+                42.84% {
+                    transform: translateX(-300%);
+                }
+                57.12% {
+                    transform: translateX(-400%);
+                }
+                71.4% {
+                    transform: translateX(-500%);
+                }
+                85.68% {
+                    transform: translateX(-600%);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }
+            .width{
+                width: 480px;
+            }
+            .card-discount{
+                background-color: #fff;
+                height: 45px;
+                width: 480px;
+                margin: 11px;
+            }
+            .credit-card{
+                margin: 2px 39px;
+                width: 410px;
+            }
+            .best-mobiles{
+                background-color: #fff;
+                width: 480px;
+                height: 220px;
+               
+            }
+            .best-mobiles-button{
+                cursor: pointer;
+                background-color: transparent;
+                color: black;
+                border: none;
+                font-size: 1.0em;
+                margin: 31px 15px;
+            }
+            .mobiles{
+                margin: 0;
+                background-color: #fff;
+                height: 212px;
+                width: 480px;
+                margin-top: -28px;
+            }
+            .ul2{
+                display: flex;
+                padding: 0;
+                margin: 0;
+                white-space: nowrap;
+                overflow: auto;
+            }
+            .li2{
+                margin: 29px -75px 14px -100px;
+                flex: 0 0 300px;
+                text-align: center;
+                padding: 10px;
+                margin-left: -86px;
+            }
+            .li2 img{
+                width: 95px;
+            }
+            .left{
+                background-color: #fff;
+                height: 80px;
+                width: 480px;
+                margin-top: 28px;
+                margin-left: 11px;
+            }
+            .width-left{
+                width: 150px;
+                margin-left: 5px;
+            }
+            .Top-deals{
+                margin: 11px;
+                background-color: #fff;
+                height: 212px;
+                width: 480px;
+                margin-top: 14px;
+            }
+            .ul3{
+                display: flex;
+                padding: 0;
+                margin: 0;
+                white-space: nowrap;
+                overflow: auto;
+            }
+            .li3{
+                margin: -23px -117px 0px -100px;
+                flex: 0 0 300px;
+                text-align: center;
+                padding: 10px;
+                margin-left: -86px;
+            }
+            .li3 img{
+                width: 95px;
+            }
+            .top-deals-button{
+                cursor: pointer;
+                background-color: transparent;
+                color: black;
+                border: none;
+                font-size: 1.0em;
+                margin: 31px 15px;
+            }
+            .nav1{
+                height: 2300px;
+                width: 498px;
+                background-color: #ebe8e4;
+                position: relative;
+            }
+            .nava{
+                color: #565656;
+                padding: 0px 6px;
+                border-right: 1px solid #333;
+                font-size: 12px;
+                text-decoration: none;
+            }
+            .nav2{
+                height: 500px;
+                width: 498px;
+                background-color: black;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                overflow: auto;
+            }
+            .one1{
+                display: none;
+            }
+            .two1{
+                display: none;
+            }
+            .one{
+                display: grid;
+                padding: 40px 60px 0;
+                column-gap: 20px;
+                grid-template-columns: repeat(6,1fr);
+            }
+            .two{
+                color: #878787;
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+            .bet{
+                font-size: 12px;
+                color: #fff;
+                display: block;
+                line-height: 25px;
+                text-decoration: none;
+            }
+            .three{
+                border-left: 1px solid #454d5e;
+                padding-left: 32px;
+            }
+            .bey{
+                white-space: nowrap;
+                color: #fff;
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box1">
+                <button type="submit" class="flipkart-button">
+                    <img src="FlipkartMedia.png" alt="Flipkart-logo" width="70px">
+                </button>
+                <button type="submit" class="Grocery-button">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fk_header_grocery_mobile_logo-d5879f.svg" alt="Grocery-logo" width="80px">
+                </button>
+                <a href="http://127.0.0.1:5500/Project/Flipkart.html"><img src="Flipkart-plus.png" alt="Flipkart-logo" class="plus" ></a>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="🔍 Search for Products, Brands and More">
+                    <button type="submit" class="search-button"><b>Search</b></button>
+                </div>
+                <button type="submit" class="seller-button"><a href="https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect" style="text-decoration: none;">🏪<b> Become a Seller</a></b></button>
+                <button type="submit" class="profile-button"><b>👤 Profile</b></button>
+                <button type="submit" class="cart-button"><b>🛒 Cart</b></button>
+                <button type="submit" class="more-button"><b>⋮</b></button>
+            </div>
+            <div class="list">
+                <div class="scroll-container"></div>
+                <ul class="ul1">
+                    <li class="li1 "><a href="https://www.flipkart.com/offers-list/discounts-for-you?screen=dynamic&pk=marketplace%3DFLIPKART~widgetType%3DdealCard~contentType%3DpersonalisedRecommendation%2Fdiscount&marketplace=FLIPKART"><img src="Top-Offer.jpg" alt=""></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/mobile-phones-store?fm=neo%2Fmerchandising&iid=M_3f331003-ae8f-4221-878b-3740fe7a66f1_1_372UD5BXDFYS_MC.ZRQ4DKH28K8J&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Mobiles_ZRQ4DKH28K8J&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L0_view-all&cid=ZRQ4DKH28K8J"><img src="MobileTab.jpg" alt=""></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/audio-video/pr?sid=0pm&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_327c5a67-8cbc-4802-b074-62a13b6ebae4_1_372UD5BXDFYS_MC.9JGNW7M0TUHD&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Electronics~Audio~All_9JGNW7M0TUHD&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=9JGNW7M0TUHD"><img src="Electronics.jpg" alt=""></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/search?q=TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="TVs.jpg" alt=""></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/clothing-and-accessories/topwear/pr?sid=clo,ash&p[]=facets.ideal_for%255B%255D%3DMen&p[]=facets.ideal_for%255B%255D%3Dmen&otracker=categorytree&fm=neo%2Fmerchandising&iid=M_1315bbd1-6276-496d-80cd-9f2e9a9b1d2d_1_372UD5BXDFYS_MC.AHHHWF67UPNB&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Fashion~Men%2527s%2BTop%2BWear~All_AHHHWF67UPNB&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=AHHHWF67UPNB"><img src="Fashion.jpg"></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/beauty-and-grooming/pr?sid=g9b&otracker=categorytree&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&fm=neo%2Fmerchandising&iid=M_505f18f2-8799-4252-97db-87ae1b88834c_1_372UD5BXDFYS_MC.NJKL2WGZ9KLB&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Beauty%252C%2BToys%2B%2526%2BMore~Beauty%2B%2526%2BPersonal%2BCare~View%2BAll_NJKL2WGZ9KLB&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=NJKL2WGZ9KLB"><img src="Beauty.jpg" alt=""></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/home-furnishing/pr?sid=jra&marketplace=FLIPKART&otracker=nmenu_sub_Home%20%26%20Furniture_0_Furnishing&fm=neo%2Fmerchandising&iid=M_6a019f32-8ad6-4b1d-8cb4-0c8a17730399_1_372UD5BXDFYS_MC.A8O1FN5LHOZ5&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Home%2B%2526%2BFurniture~Home%2BFurnishings~All_A8O1FN5LHOZ5&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=A8O1FN5LHOZ5"><img src="HomeKitchen.jpg" alt=""></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/home-furnishing/pr?sid=jra&marketplace=FLIPKART&otracker=nmenu_sub_Home%20%26%20Furniture_0_Furnishing&fm=neo%2Fmerchandising&iid=M_6a019f32-8ad6-4b1d-8cb4-0c8a17730399_1_372UD5BXDFYS_MC.A8O1FN5LHOZ5&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Home%2B%2526%2BFurniture~Home%2BFurnishings~All_A8O1FN5LHOZ5&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L2_view-all&cid=A8O1FN5LHOZ5"><img src="Furniture.jpg" alt=""></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/travel/flights?param=DTNavIcon&fm=neo%2Fmerchandising&iid=M_f5f1d0c5-fa22-4b98-b90f-a88f987f7ed1_1_372UD5BXDFYS_MC.V4ZPKTOAO321&otracker=hp_rich_navigation_7_1.navigationCard.RICH_NAVIGATION_Travel_V4ZPKTOAO321&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_7_L0_view-all&cid=V4ZPKTOAO321"><img src="Flights.jpg" alt=""></a></li>
+                    <li class="li1 "><a href="https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_3730ff1b-4d29-4169-8e4b-3c4d827e6725_1_372UD5BXDFYS_MC.CBUR1Q46W5F1&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Grocery_CBUR1Q46W5F1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=CBUR1Q46W5F1"><img src="Grocery.jpg" alt=""></a></li>
+                </ul> 
+            </div>
+            <div class="slider">
+                <a href="https://www.flipkart.com/search?q=refrigerator&as=on&as-show=on&otracker=AS_Query_OrganicAutoSuggest_3_5_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_3_5_na_na_na&as-pos=3&as-type=RECENT&suggestionId=refrigerator&requestId=fd4a7841-c9b0-4eb8-91a3-80bfa90c1716&as-searchtext=refrigerator"><img src="banner1.jpg" class="width" alt=""></a>
+                <a href="https://www.flipkart.com/search?q=asus%20tuf&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="banner2.jpg" class="width" alt=""></a>
+                <a href="https://www.flipkart.com/search?q=4k+smart+tv&sid=ckf%2Cczl&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&as-pos=1&as-type=RECENT&suggestionId=4k+smart+tv%7CTelevisions&requestId=88d4bd85-3ff3-4c43-a4ac-46bb26d0473d&as-searchtext=4K%20smart"><img src="banner3.jpg" class="width" alt=""></a>
+                <a href="https://www.flipkart.com/travel/flights?param=Travel-DTHPW-14OFFSBI"><img src="banner4.jpg" class="width" alt=""></a>
+                <a href="https://www.flipkart.com/search?q=iphone%2014&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="banner5.jpg" class="width" alt=""></a>
+                <a href="https://www.flipkart.com/travel/flights?param=Travel-DTHPW-14OFFSBI"><img src="banner6.jpg" class="width" alt=""></a>
+                <a href="https://www.flipkart.com/search?q=laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="banner7.jpg" class="width" alt=""></a>
+            </div>
+            <div class="card-discount">
+                <a href="https://www.flipkart.com/flipkart-axis-bank-credit-card-store?otracker=undefined_footer"><img src="card-discount.jpg" alt="" class="credit-card"></a>
+            </div>
+            <div class="best-mobiles">
+                <button type="submit" class="best-mobiles-button"><b>Best Mobile</b></button>
+                <div class="mobiles">
+                    <div class="scroll-container"></div>
+                        <ul class="ul2">
+                            <li class="li2 "><a href="https://www.flipkart.com/search?q=redmi%20note%2012%20pro&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="Phone1.jpg" alt=""></a></li>
+                            <li class="li2 "><a href="https://www.flipkart.com/search?q=Google%20%20pixel&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="Phone2.jpg" alt=""></a></li>
+                            <li class="li2 "><a href="https://www.flipkart.com/search?q=realme+11+pro+5g&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=realme+11+pro+5g%7CMobiles&requestId=5d7bd60d-94a1-4fed-a548-adaa9b2334a6&as-searchtext=realme%2011%20pro"><img src="Phone3.jpg" alt=""></a></li>
+                            <li class="li2 "><a href="https://www.flipkart.com/search?q=nothing+phone+2&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_4_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_4_na_na_ps&as-pos=2&as-type=RECENT&suggestionId=nothing+phone+2%7CMobiles&requestId=3911cf51-421b-4c05-b059-212c0fda6fdd&as-backfill=on"><img src="Phone4.jpg" alt=""></a></li>
+                            <li class="li2 "><a href="https://www.flipkart.com/search?q=galaxy%20s22&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="Phone5.jpg" alt=""></a></li>
+                            <li class="li2 "><a href="https://www.flipkart.com/search?q=f34%205g&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="Phone6.jpg" alt=""></a></li>
+                            <li class="li2 "><a href="https://www.flipkart.com/search?q=vivo+t2+pro&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_5_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_5_na_na_ps&as-pos=2&as-type=RECENT&suggestionId=vivo+t2+pro%7CMobiles&requestId=d0b9683d-2a82-4dab-a667-bf29d7ba10d9&as-searchtext=vivo%20"><img src="Phone7.jpg" alt=""></a></li>
+                            <li class="li2 "><a href="https://www.flipkart.com/search?q=vivo%20t2%20X&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="Phone8.jpg" alt=""></a></li>
+                        </ul> 
+                </div>
+            </div><br><br>
+            <div class="extra-sale">
+                <a href="https://www.flipkart.com/beauty-and-grooming/bath-shower/pr?sid=g9b%2C5nz&q=bath&otracker=categorytree&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&fm=neo%2Fmerchandising&iid=M_45965578-667e-4a59-9754-79ee0747bc26_1_372UD5BXDFYS_MC.S7NAQKMM3EK4&otracker=hp_rich_navigation_8_1.navigationCard.RICH_NAVIGATION_Beauty%252C%2BToys%2B%2526%2BMore~Beauty%2B%2526%2BPersonal%2BCare~Bath%2BEssentials_S7NAQKMM3EK4&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_8_L2_view-all&cid=S7NAQKMM3EK4"><img src="extra-sale.jpg" alt="" width="170px" style="margin: 7px 14px;"></a>
+            </div>
+            <div class="left">
+                <a href="https://www.flipkart.com/search?q=vivo%20t2%205G&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="left1.jpg" alt="" class="width-left"></a>
+                <a href="https://www.flipkart.com/search?q=washing+machine&sid=j9e%2Cabm%2C8qx&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&as-pos=1&as-type=RECENT&suggestionId=washing+machine%7CWashing+Machines&requestId=f7a8eca1-f391-4ce5-a641-90a91599cb0d&as-searchtext=wash"><img src="left2.jpg" alt="" class="width-left"></a>
+                <a href="https://www.flipkart.com/search?q=best+laptop&sid=6bo%2Cb5g&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_8_na_na_na&as-pos=1&as-type=RECENT&suggestionId=best+laptop%7CLaptops&requestId=eeb9cb36-9d9e-49f9-b020-a84ab431801b&as-backfill=on"><img src="left3.jpg" alt="" class="width-left"></a>
+            </div>
+            <div class="Top-deals">
+                <button type="submit" class="top-deals-button"><b>Top Deals</b></button>
+                <div class="scroll-container"></div>
+                    <ul class="ul3">
+                        <li class="li3 "><a href="https://www.flipkart.com/search?q=ladies%20kurti&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="photo1.jpg" alt=""></a></li>
+                        <li class="li3 "><a href="https://www.flipkart.com/search?q=mens+watch&sid=r18%2Cf13&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=mens+watch%7CWrist+Watches&requestId=20912e68-a701-45bb-9683-94447870ba04&as-backfill=on"><img src="photo2.jpg" alt=""></a></li>
+                        <li class="li3 "><a href="https://www.flipkart.com/search?q=women+sandals&sid=osp%2Ciko&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=women+sandals%7CWomen%27s+Footwear&requestId=495d308b-f27d-4d1b-99c2-d1e0ace7c70e&as-backfill=on"><img src="photo3.jpg" alt=""></a></li>
+                        <li class="li3 "><a href="https://www.flipkart.com/search?q=men+sports+shoes&sid=osp%2Ccil%2C1cu&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&as-pos=1&as-type=RECENT&suggestionId=men+sports+shoes%7CMen%E2%80%99s+Sports+Shoes&requestId=fc1c668b-54f4-443c-ad2a-37ece61b0de4&as-backfill=on"><img src="photo4.jpg" alt=""></a></li>
+                        <li class="li3 "><a href="https://www.flipkart.com/search?q=ladies+kurtis&sid=clo%2Ccfv%2Ccib%2Crkt&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_12_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_12_na_na_na&as-pos=1&as-type=RECENT&suggestionId=ladies+kurtis%7CWomen%27s+Kurtas&requestId=ae0ca37b-f096-4e64-b700-91ec9ec1aaff&as-backfill=on&p%5B%5D=facets.price_range.from%3D300&p%5B%5D=facets.price_range.to%3DMax"><img src="photo5.jpg" alt=""></a></li>
+                        <li class="li3 "><a href="https://www.flipkart.com/search?q=sunglasses&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="photo6.jpg" alt=""></a></li>
+                        <li class="li3 "><a href="https://www.flipkart.com/search?q=sandals&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="photo7.jpg" alt=""></a></li>
+                        <li class="li3 "><a href="https://www.flipkart.com/search?q=boots&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img src="photo8.jpg" alt=""></a></li>
+                    </ul> 
+            </div>
+            <div class="left">
+                <a href="https://www.flipkart.com/kitchen-cookware-serveware/pr?sid=upp&otracker=nmenu_sub_Home%20%26%20Furniture_0_Kitchen%2C%20Cookware%20%26%20Serveware"><img src="left4.jpg" alt="" class="width-left"></a>
+                <a href="https://www.flipkart.com/furniture/mattresses/pr?sid=wwe,rg9&otracker=nmenu_sub_Home%20%26%20Furniture_0_Mattresses"><img src="left5.jpg" alt="" class="width-left"></a>
+                <a href="https://www.flipkart.com/search?q=protein+powder&sid=hlc%2Cetg%2C1rx&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=protein+powder%7CProtein+Supplement&requestId=f5dded6e-123a-43b3-86d8-d271a8e8f94d&as-searchtext=protein"><img src="left6.jpg" alt="" class="width-left"></a>
+            </div>      
+        </div>
+    </header>
+    <nav>
+        <div class="nav1">
+            <button type="submit" class="top-stories-button"><b>Top Stories : Brand Directory</b></button><br>
+            <div class="nava_1">
+                <button type="submit" class="most-searched-button">MOST SEARCHED FOR ON FLIPKART<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=iphone%2014&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">iphone 14 </a>
+                <a href="https://www.flipkart.com/search?q=iphone+15&as=on&as-show=on&otracker=AS_Query_OrganicAutoSuggest_8_3_na_na_ps&otracker1=AS_Query_OrganicAutoSuggest_8_3_na_na_ps&as-pos=8&as-type=RECENT&suggestionId=iphone+15&requestId=62445e95-7f8e-4e7d-8565-e22d279f6948&as-searchtext=iph" class="nava">iphone 15 </a>
+                <a href="https://www.flipkart.com/spoyl-ff-store?otracker=undefined_footer" class="nava">Spoyl Store </a>
+                <a href="https://www.flipkart.com/search?q=SAMSUNG%20Galaxy%20Z%20Flip%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">SAMSUNG Galaxy Z Flip </a>
+                <a href="https://www.flipkart.com/search?q=galaxy+z+fold5&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=galaxy+z+fold5%7CMobiles&requestId=4c5cd594-2583-4ee8-b88a-3169345941d3&as-searchtext=galaxy%20z%20" class="nava">SAMSUNG Galaxy Z Fold5 </a>
+                <a href="https://www.flipkart.com/superelite-credit-card-store?otracker=undefined_footer" class="nava">Flipkart Axis Bank Super Elite Credit Card </a>
+                <a href="https://www.flipkart.com/search?q=5g+mobile&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=5g+mobile%7CMobiles&requestId=ccd50ff3-e952-4ecf-bb1b-3e552df3d880&as-searchtext=5g" class="nava">5G Mobile Phones </a>
+                <a href="https://www.flipkart.com/search?q=primebook+laptop&sid=6bo%2Cb5g&as=on&as-show=on&otracker=AS_QueryStore_HistoryAutoSuggest_1_8_na_na_na&otracker1=AS_QueryStore_HistoryAutoSuggest_1_8_na_na_na&as-pos=1&as-type=HISTORY&suggestionId=primebook+laptop%7CLaptops&requestId=e6cefe6e-9514-46fe-8387-16066ba69c48&as-backfill=on" class="nava">Primebook Laptops </a>
+                <a href="https://www.flipkart.com/search?q=motoedge%2040&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Moto Edge 40 </a>
+                <a href="https://www.flipkart.com/pages/grievance-redressal-mechanism?otracker=undefined_footer" class="nava">Grievance Redressal </a>
+                <a href="https://www.flipkart.com/search?q=oppo+reno+7+5g&as=on&as-show=on&otracker=AS_Query_OrganicAutoSuggest_6_6_na_na_ps&otracker1=AS_Query_OrganicAutoSuggest_6_6_na_na_ps&as-pos=6&as-type=RECENT&suggestionId=oppo+reno+7+5g&requestId=a476b362-302b-42a2-973e-fcda366f15b8&as-searchtext=oppo%20r" class="nava">OPPO Reno7 Pro 5 </a>
+                <a href="https://www.flipkart.com/search?q=iphone+13&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=iphone+13%7CMobiles&requestId=b7568604-79b0-4475-ac97-eb9b2f2bb5c8&as-searchtext=iphone%2013" class="nava">iphone 13 </a>
+                <a href="https://www.flipkart.com/helpcentre?otracker=undefined_footer" class="nava">Help Centre </a>
+                <a href="https://www.flipkart.com/helpcentre/trackOrder/i/2?otracker=undefined_footer" class="nava">Track Orders </a>
+                <a href="https://www.flipkart.com/helpcentre/manageOrder/i/3?otracker=undefined_footer" class="nava">Manage Orders </a>
+                <a href="https://www.flipkart.com/helpcentre/returnOrder/i/4?otracker=undefined_footer" class="nava">Return Orders </a>
+                <a href="https://www.flipkart.com/the-gift-card-store?otracker=undefined_footer" class="nava">Gift Cards Store </a>
+                <a href="https://www.flipkart.com/flipkart-axis-bank-credit-card-store?otracker=undefined_footer" class="nava">Flipkart Axis Bank Credit Card </a>
+                <a href="https://www.flipkart.com/flipkart-pay-later-store?otracker=undefined_footer" class="nava">Pay Later </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="MOBILES-button">MOBILES<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=iphone%2012%2064GB&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">iphone 12 64GB </a>
+                <a href="https://www.flipkart.com/search?q=iphone%2012%20Pro%20512GB&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">iphone 12 Pro 512GB </a>
+                <a href="https://www.flipkart.com/search?q=iphone%2012%20128GB&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">iphone 12 128GB </a>
+                <a href="https://www.flipkart.com/search?q=Vivo%20Y15&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Vivo Y15 </a>
+                <a href="https://www.flipkart.com/search?q=Samsung%20Galaxy%20S21%20FE%205G&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Samsung Galaxy S21 FE 5G </a>
+                <a href="https://www.flipkart.com/search?q=Infinix%20Hot%2030i&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Infinix Hot 30i </a>
+                <a href="https://www.flipkart.com/search?q=Realme%2010%20Pro%205G&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Realme 10 Pro 5G </a>
+                <a href="https://www.flipkart.com/search?q=Motorola%20G62%205G&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Motorola G62 5G </a>
+                <a href="https://www.flipkart.com/search?q=Nothing%20Phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Nothing Phone </a>
+                <a href="https://www.flipkart.com/search?q=Redmi%20Note%2012%20Pro%205G&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Redmi Note 12 Pro 5G </a>
+                <a href="https://www.flipkart.com/search?q=Infinix%20Smart%207&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Infinix Smart 7 </a>
+                <a href="https://www.flipkart.com/search?q=Vivo%20Y12&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Vivo Y12 </a>
+                <a href="https://www.flipkart.com/search?q=Oppo%20A12&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Oppo A12 </a>
+                <a href="https://www.flipkart.com/search?q=Motorola%205G%20Phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Motorola 5G Phone </a>
+                <a href="https://www.flipkart.com/search?q=Realme%205G%20Phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Realme 5G Phone </a>
+                <a href="https://www.flipkart.com/search?q=Apple%205G%20Phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Apple 5G Phone </a>
+                <a href="https://www.flipkart.com/search?q=Iqoo%205G%20Phone&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Iqoo 5G Phone </a>
+                <a href="https://www.flipkart.com/search?q=OnePlus%205G%20Phones&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">OnePlus 5G Phones </a>
+                <a href="https://www.flipkart.com/search?q=Samsung%20Phones&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Samsung Phones </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="CAMERA-button">CAMERA<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=GoPro%20Action%20Camera&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">GoPro Action Camera </a>
+                <a href="https://www.flipkart.com/search?q=Nikon%20Camera&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Nikon Camera </a>
+                <a href="https://www.flipkart.com/search?q=Canon%20Camera&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Canon Camera </a>
+                <a href="https://www.flipkart.com/search?q=Sony%20Camera&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Sony Camera </a>
+                <a href="https://www.flipkart.com/search?q=Canon%20DSLR&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Canon DSLR </a>
+                <a href="https://www.flipkart.com/search?q=Nikon%20DSLR&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Nikon DSLR </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="LAPTOPS-button">LAPTOPS<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=Asus%20ROG%20Ally&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Asus ROG Ally </a>
+                <a href="https://www.flipkart.com/search?q=Mackbook%20Pro%20M2&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Mackbook Pro M2 </a>
+                <a href="https://www.flipkart.com/search?q=Premium%20Laptop&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Premium Laptop </a>
+                <a href="https://www.flipkart.com/search?q=Asus%20ROG%20Strix%20SCAR%2016&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Asus ROG Strix SCAR 16 </a>
+                <a href="https://www.flipkart.com/search?q=Asus%20ROG%20Zephyrus%20M16&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Asus ROG Zephyrus M16 </a>
+                <a href="https://www.flipkart.com/search?q=Asus%20Zenbook%2014%20OLED&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Asus Zenbook 14 OLED </a>
+                <a href="https://www.flipkart.com/search?q=Realme%20Book%20Prime&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Realme Book Prime </a>
+                <a href="https://www.flipkart.com/search?q=Microsoft%20Surface%20Go%20Pentium%20128GB&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Microsoft Surface Go Pentium 128GB </a>
+                <a href="https://www.flipkart.com/search?q=Apple%20Laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Apple Laptops </a>
+                <a href="https://www.flipkart.com/search?q=Acer%20Laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Acer Laptops </a>
+                <a href="https://www.flipkart.com/search?q=Lenovo%20Latops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Lenovo Latops </a>
+                <a href="https://www.flipkart.com/search?q=Dell%20Laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Dell Laptops </a>
+                <a href="https://www.flipkart.com/search?q=Asus%20Laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Asus Laptops </a>
+                <a href="https://www.flipkart.com/search?q=HP%20Laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">HP Laptops </a>
+                <a href="https://www.flipkart.com/search?q=Gaming%20Laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Gaming Laptops </a>
+                <a href="https://www.flipkart.com/search?q=2%20in%201%20Laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">2 in 1 Laptops </a>
+                <a href="https://www.flipkart.com/search?q=Infinix%20INBook%20Y1%20Plus&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Infinix INBook Y1 Plus </a>
+                <a href="https://www.flipkart.com/search?q=Samsung%20Galaxy%20Book%203&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Samsung Galaxy Book 3 </a>
+                <a href="https://www.flipkart.com/search?q=12th%20Gen%20Intel%20Core%20Laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">12th Gen Intel Core Laptops </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="TVS-button">TVS<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=Nokia%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Nokia TV </a>
+                <a href="https://www.flipkart.com/search?q=Panasonic%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Panasonic TV </a>
+                <a href="https://www.flipkart.com/search?q=Thomson%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Thomson TV </a>
+                <a href="https://www.flipkart.com/search?q=Mi%20X%20Pro&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Mi X Pro </a>
+                <a href="https://www.flipkart.com/search?q=Realme%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Realme TV </a>
+                <a href="https://www.flipkart.com/search?q=Motorola%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Motorola TV </a>
+                <a href="https://www.flipkart.com/search?q=OnePlus%20TVs&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">OnePlus TVs </a>
+                <a href="https://www.flipkart.com/search?q=LG%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">LG TV </a>
+                <a href="https://www.flipkart.com/search?q=Mi%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Mi TV </a>
+                <a href="https://www.flipkart.com/search?q=Sony%20TV%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Sony TV </a>
+                <a href="https://www.flipkart.com/search?q=Samsung%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Samsung TV </a>
+                <a href="https://www.flipkart.com/search?q=Android%20TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Android TV </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="LARGE-button">LARGE APPLIANCES<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=Television&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Television </a>
+                <a href="https://www.flipkart.com/search?q=Washing%20Machines&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Washing Machines </a>
+                <a href="https://www.flipkart.com/search?q=Refrigerators&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Refrigerators </a>
+                <a href="https://www.flipkart.com/search?q=Air%20Conditioners&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Air Conditioners </a>
+                <a href="https://www.flipkart.com/search?q=Electric%20Cookers&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Electric Cookers </a>
+                <a href="https://www.flipkart.com/search?q=Electric%20Jug&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Electric Jug </a>
+                <a href="https://www.flipkart.com/search?q=Induction%20Cooktops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Induction Cooktops </a>
+                <a href="https://www.flipkart.com/search?q=Inverters%2FStabilizer&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Inverters/Stabilizer </a>
+                <a href="https://www.flipkart.com/search?q=Irons&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Irons </a>
+                <a href="https://www.flipkart.com/search?q=Mixer%20Grinder%20Juicer&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Mixer Grinder Juicer </a>
+                <a href="https://www.flipkart.com/search?q=Chimneys&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Chimneys </a>
+                <a href="https://www.flipkart.com/search?q=Vaccum%20Cleaners&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Vaccum Cleaners </a>
+                <a href="https://www.flipkart.com/search?q=Fans&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Fans </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="CLOTHING-button">CLOTHING<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=Green%20Bridal%20Lehenga&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Green Bridal Lehenga </a>
+                <a href="https://www.flipkart.com/search?q=Bridal%20Blouse&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Bridal Blouse </a>
+                <a href="https://www.flipkart.com/search?q=Half%20Saree%20Blouse%20Designs&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Half Saree Blouse Designs </a>
+                <a href="https://www.flipkart.com/search?q=Designer%20Blouses&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Designer Blouses </a>
+                <a href="https://www.flipkart.com/search?q=Blouse%20Designs&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Blouse Designs </a>
+                <a href="https://www.flipkart.com/search?q=Men%20Shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Men Shirts </a>
+                <a href="https://www.flipkart.com/search?q=Cotton%20Saree%20Blouse%20Designs&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Cotton Saree Blouse Designs </a>
+                <a href="https://www.flipkart.com/search?q=Men%20T-Shirts&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Men T-Shirts </a>
+                <a href="https://www.flipkart.com/search?q=Jeans&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Jeans </a>
+                <a href="https://www.flipkart.com/search?q=Saree&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Saree </a>
+                <a href="https://www.flipkart.com/search?q=One%20Pieces&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">One Pieces </a>
+                <a href="https://www.flipkart.com/search?q=Groom%20Sherwani&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Groom Sherwani </a>
+                <a href="https://www.flipkart.com/search?q=Designer%20Salwar%20Suit&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Designer Salwar Suit </a>
+                <a href="https://www.flipkart.com/search?q=Kurti%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Kurti </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="FOOTWEAR-button">FOOTWEAR<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=Adidas%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Adidas Shoes </a>
+                <a href="https://www.flipkart.com/search?q=Reebok%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Reebok Shoes </a>
+                <a href="https://www.flipkart.com/search?q=Nike%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Nike Shoes </a>
+                <a href="https://www.flipkart.com/search?q=Puma%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Puma Shoes </a>
+                <a href="https://www.flipkart.com/search?q=Boots&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Boots </a>
+                <a href="https://www.flipkart.com/search?q=Bata%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Bata Shoes </a>
+                <a href="https://www.flipkart.com/search?q=Woodland%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Woodland Shoes </a>
+                <a href="https://www.flipkart.com/search?q=Sketchers%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Sketchers Shoes </a>
+                <a href="https://www.flipkart.com/search?q=Sneakers&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Sneakers </a>
+                <a href="https://www.flipkart.com/search?q=Women%20Boots&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Women Boots </a>
+                <a href="https://www.flipkart.com/search?q=Sport%20Shoes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Sport Shoes </a>
+                <a href="https://www.flipkart.com/search?q=Loafers&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Loafers </a>
+                <a href="https://www.flipkart.com/search?q=Sandals&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Sandals </a>
+                <a href="https://www.flipkart.com/search?q=Formal%20Shoes%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Formal Shoes </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="BEST-button">BEST SELLING ON FLIPKART<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=Headphones&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Headphones </a>
+                <a href="https://www.flipkart.com/search?q=Best%20Gas%20Geyser&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Best Gas Geyser </a>
+                <a href="https://www.flipkart.com/search?q=Kitchen%20Geyser&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Kitchen Geyser </a>
+                <a href="https://www.flipkart.com/search?q=Nutri%20Blenders&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Nutri Blenders </a>
+                <a href="https://www.flipkart.com/search?q=Portable%20Air%20Cooler&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Portable Air Cooler </a>
+                <a href="https://www.flipkart.com/search?q=Best%20Air%20Cooler&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Best Air Cooler </a>
+                <a href="https://www.flipkart.com/search?q=Bags&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Bags </a>
+                <a href="https://www.flipkart.com/search?q=Hitachi%20Refrigerator%203%20Door&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Hitachi Refrigerator 3 Door </a>
+                <a href="https://www.flipkart.com/search?q=Books&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Books </a>
+                <a href="https://www.flipkart.com/search?q=Toys&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Toys </a>
+                <a href="https://www.flipkart.com/search?q=Candles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Candles </a>
+                <a href="https://www.flipkart.com/search?q=Helmets&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Helmets </a>
+                <a href="https://www.flipkart.com/search?q=Clocks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Clocks </a>
+                <a href="https://www.flipkart.com/search?q=Baby%20Food&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Baby Food </a>
+                <a href="https://www.flipkart.com/search?q=Chocolate%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Chocolate </a>
+                <a href="https://www.flipkart.com/search?q=Cycle&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Cycle </a>
+                <a href="https://www.flipkart.com/search?q=Calculator&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Calculator </a>
+                <a href="https://www.flipkart.com/search?q=Lipsticks&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Lipsticks </a>
+            </div><br>
+            <div class="nava_1">
+                <button type="submit" class="FURNITURE-button">FURNITURE<b>:</b></button>
+                <a href="https://www.flipkart.com/search?q=Furniture&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Furniture </a>
+                <a href="https://www.flipkart.com/search?q=Sofas&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Sofas </a>
+                <a href="https://www.flipkart.com/search?q=Beds&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Beds </a>
+                <a href="https://www.flipkart.com/search?q=Dining%20Sets&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Dining Sets </a>
+                <a href="https://www.flipkart.com/search?q=Wardrobes&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Wardrobes </a>
+                <a href="https://www.flipkart.com/search?q=Mattresses&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Mattresses </a>
+                <a href="https://flipkart.com/search?q=TV%20Units&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">TV Units </a>
+                <a href="https://www.flipkart.com/search?q=Tables&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Tables </a>
+                <a href="https://www.flipkart.com/search?q=Chairs%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Chairs </a>
+                <a href="https://www.flipkart.com/search?q=Shelves&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Shelves </a>
+                <a href="https://www.flipkart.com/search?q=Bean%20Bags&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Bean Bags </a>
+                <a href="https://www.flipkart.com/search?q=Office%20Bags&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Office Bags </a>
+                <a href="https://www.flipkart.com/search?q=Computer%20Table&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Computer Table </a>
+                <a href="https://www.flipkart.com/search?q=Office%20Tables&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Office Tables </a>
+                <a href="https://www.flipkart.com/search?q=Red%20Sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Red Sofa </a>
+                <a href="https://www.flipkart.com/search?q=White%20Sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">White Sofa </a>
+                <a href="https://www.flipkart.com/search?q=White%20Sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Green </a>
+                <a href="https://www.flipkart.com/search?q=White%20Sofa&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off" class="nava">Black Sofa </a>
+            </div><br>
+            <div>
+                <button type="submit" class="Navigation-button1"><b>Flipkart: The One-stop Shopping Destination</b><b>:</b></button>
+                <button type="submit" class="desc1-button"><p style="text-align: left;">E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. </p></button>
+            </div><br>
+            <button type="submit" class="desc2-button"><p style="text-align: left;">What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. </button>
+            <div>
+                <button type="submit" class="Navigation-button2"><b>Flipkart Plus</b><b>:</b></button>
+                <button type="submit" class="desc2-button"><p style="text-align: left;">A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!  
+                <br>
+                What's more, you can even use the Flipkart supercoins for a number of exciting services, like: <br>
+                An annual Zomato Gold membership <br>
+                An annual Hotstar Premium membership <br>
+                6 months Gaana plus subscription <br>
+                Rupees 550 instant discount on flights on ixigo <br>
+                Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p></button>
+            </div>
+            <div>
+                <button type="submit" class="Navigation-button2"><b>No Cost EMI</b><b>:</b></button>
+                <button type="submit" class="desc2-button"><p style="text-align: left;">In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p></button>
+            </div>
+            <div>
+                <button type="submit" class="Navigation-button2"><b>EMI on Debit Cards</b><b>:</b></button>
+                <button type="submit" class="desc2-button"><p style="text-align: left;">Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. </p></button>
+            </div>
+            <div>
+                <button type="submit" class="Navigation-button2"><b>Mobile Exchange Offers</b><b>:</b></button>
+                <button type="submit" class="desc2-button"><p style="text-align: left;">Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. </p></button>
+            </div>
+        </div>
+        <div class="nav2">
+            <div class="scroll-container"></div>
+            <div class="one">
+                <div>
+                    <div class="two">About</div>
+                    <a href="https://www.flipkart.com/helpcentre?otracker=undefined_footer_navlinks" class="bet">Contact Us</a>
+                    <a href="https://corporate.flipkart.net/corporate-home" class="bet">About Us</a>
+                    <a href="https://www.flipkartcareers.com/?otracker=undefined_footer_navlinks#!/" class="bet">Careers</a>
+                    <a href="https://stories.flipkart.com/?otracker=undefined_footer_navlinks" class="bet">Flipkart Stories</a>
+                    <a href="https://stories.flipkart.com/category/top-stories/news/" class="bet">Press</a>
+                    <a href="https://www.flipkartwholesale.com/?otracker=undefined_footer_navlinks" class="bet">Flipkart Wholsale</a>
+                    <a href="https://www.cleartrip.com/" class="bet">Cleartrip</a>
+                    <a href="https://www.flipkart.com/corporate-information" class="bet">Corporate Information</a>
+                </div>
+                <div>
+                    <div class="two">Help</div>
+                    <a href="https://www.flipkart.com/pages/payments" class="bet">Payments</a>
+                    <a href="https://www.flipkart.com/pages/shipping" class="bet">Shipping</a>
+                    <a href="https://www.flipkart.com/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG" class="bet">Cancellation & Returns</a>
+                    <a href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG" class="bet">FAQ</a>
+                    <a href="https://seller.flipkart.com/page-not-found" class="bet">Report Infringment</a>
+                </div>
+                <div>
+                    <div class="two">Consumer Policy</div>
+                    <a href="https://www.flipkart.com/pages/returnpolicy?otracker=undefined_footer_navlinks" class="bet">Cancellation & Returns</a>
+                    <a href="https://www.flipkart.com/pages/terms?otracker=undefined_footer_navlinks" class="bet">Terms Of Use</a>
+                    <a href="https://www.flipkart.com/pages/paymentsecurity?otracker=undefined_footer_navlinks" class="bet">Security</a>
+                    <a href="https://www.flipkart.com/pages/privacypolicy?otracker=undefined_footer_navlinks" class="bet">Privacy</a>
+                    <a href="https://www.flipkart.com/sitemap?otracker=undefined_footer_navlinks" class="bet">Sitemap</a>
+                    <a href="https://www.flipkart.com/pages/grievance-redressal-mechanism?otracker=undefined_footer_navlinks" class="bet">Grievance Redressal</a>
+                    <a href="https://www.flipkart.com/pages/ewaste-compliance-tnc?otracker=undefined_footer_navlinks" class="bet">EPR Compliance</a>
+                </div>
+                <div>
+                    <div class="two">Social</div>
+                    <a href="https://www.facebook.com/flipkart" class="bet">Facebook</a>
+                    <a href="https://twitter.com/flipkart" class="bet">Twitter</a>
+                    <a href="https://www.youtube.com/flipkart" class="bet">YouTube</a>
+                </div>
+                <div class="three">
+                    <div class="two">Mail Us:</div>
+                    <p class="bey">Flipkart Internet Private Limited,</p>
+                    <p class="bey">Buildings Alyssa, Begonia &</p>
+                    <p class="bey">Clove Embassy Tech Village,</p>
+                    <p class="bey">Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p class="bey">Bengaluru, 560103,</p>
+                    <p class="bey">Karnataka, India</p>
+                </div>
+                <div class="four">
+                    <div class="two">Registered Office Address:</div>
+                    <p class="bey">Flipkart Internet Private Limited, </p>
+                    <p class="bey"> Buildings Alyssa, Begonia & </p>
+                    <p class="bey"> Clove Embassy Tech Village, </p>
+                    <p class="bey"> Outer Ring Road, Devarabeesanahalli Village, </p>
+                    <p class="bey"> Bengaluru, 560103, </p>
+                    <p class="bey"> Karnataka, India </p>
+                    <p class="bey"> CIN : U51109KA2012PTC066107 </p>
+                    <p class="bey">
+                        Telephone: 
+                        <a href="number">044-45614700</a>
+                    </p>
+                </div>
+            </div>
+            <div class="one1">
+                <div class="two1">
+                    <a href="" style="color: #fff; text-decoration: none;">Become a Seller</a>
+                </div>
+                <div class="two1">
+                    <a href="" style="color: #fff; text-decoration: none;">Advertise</a>
+                </div>
+                <div class="two1">
+                    <a href="" style="color: #fff; text-decoration: none;">Gift Cards</a>
+                </div>
+                <div class="two1">
+                    <a href="" style="color: #fff; text-decoration: none;">Help Center</a>
+                </div>
+                <span style="color: #fff;">© 2007-2023 Flipkart.com</span>
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="payment methods">
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
